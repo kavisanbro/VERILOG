@@ -22,6 +22,6 @@
 
 module full_adder(input a,b,c,output sum,carry );
 assign a=0,b=1,c=0;
-assign sum=a^b^c;
-assign carry=a&b|b&c|a&c;
+assign sum=a^b^c;     //XOR 
+assign carry=a&b|b&c|a&c;    //OR
 endmodule
